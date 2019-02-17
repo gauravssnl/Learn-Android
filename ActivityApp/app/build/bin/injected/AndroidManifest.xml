@@ -34,7 +34,7 @@
 
 		<activity
 			android:name=".SampleActivity"
-			android:label="SampleActivity"/>
+			android:label="@string/sample_activity"/>
 
 	</application>
 

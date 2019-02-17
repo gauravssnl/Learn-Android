@@ -3,5 +3,5 @@
 
     <string name="app_name">MyApp</string>
     <string name="hello_world">Hello world!</string>
-
+	<string name="sample_activity">SampleActivity</string>
 </resources>
