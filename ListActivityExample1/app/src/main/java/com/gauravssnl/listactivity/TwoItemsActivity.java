@@ -6,7 +6,7 @@ import android.view.*;
 import android.content.*;
 import android.support.v7.app.AppCompatActivity;
 
-public class TwoItemsActivity extends AppCompatActivity
+class TwoItemsActivity extends AppCompatActivity
 {
 	final String[] fruits = {"Orange", "Banana","Melon", "Grape", "Pomegranate"};
 	final String[] colors = {"Orange", "Yellow", "Green", "Green", "Red"};

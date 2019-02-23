@@ -22,9 +22,7 @@
 			android:label="ListActivity Example">
 		</activity>
 		<activity
-			android:name=".TwoItemsActivity"
-			android:theme="@style/AppTheme"
-			>
+			android:name=".TwoItemsActivity">
 		</activity>
     </application>
 
