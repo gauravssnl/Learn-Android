@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:minHeight="?attr/actionBarSize"  
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:titleTextColor="@android:color/white"
+		android:background="#5b39c6">
+    </android.support.v7.widget.Toolbar>
+	
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
