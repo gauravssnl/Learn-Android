@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroTutor</string>
+    <string name="about_dialog_message">
+        Developer : @gauravssnl\nTools : AIDE\nThanks : @dimy44 , DimonVideo.ru Forum, Google Android Team\n
+    </string>
+    <string name="ok">OK</string>
+</resources>

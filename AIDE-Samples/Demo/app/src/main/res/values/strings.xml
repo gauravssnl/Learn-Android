@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="about_menu">Developed by @Modi.\nThe one and only bakchod.</string>
+	<string name="channel_name">Channel Name</string>
+	<string name="channel_description"> Channel Name" </string>
+	<string name="reply_label">Reply" </string>
+	<string name="coming_soon">Coming Soon...</string>
+	<string name="settings_coming_soon">Settings Menu Coming Soon</string>
+	<string name="ok">OK</string>
+	<string name="notification_title">Modi</string>
+	<string name="notification_message">Mitron, Acche din aa gaye na ?</string>
+	<string name="type_answer">Type Answer</string>
+	<string name="notify">Notify </string>
+	<string name="button">Button</string>
+	<string name="settings">Settings</string>
+	<string name="about">About</string>
+	<string name="toast">Toast</string>
+	<string name="cool_app"> This app is cool</string>
+	<string name="fab_btn1_click_msg">You clicked on floating button</string>
+	<string name="launching_settings">Launching Settings</string>
+	<string name="toolbar_home_click">Clicked on Home</string>
+	<string name="nav_open">Open</string>
+	<string name="nav_close">Close</string>
+</resources>

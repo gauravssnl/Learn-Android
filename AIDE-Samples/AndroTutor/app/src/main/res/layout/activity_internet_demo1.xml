@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:id="@+id/activity_internet_demo1Coordinatorlayot"
+	android:fitsSystemWindows="true">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:liftOnScroll="true"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/activity_internet_demo1Toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:layout_scrollFlags="scroll|enterAlways|snap"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.core.widget.NestedScrollView
+		android:id="@+id/activity_internet_demo1NestedScrollView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="60dp"
+			android:id="@+id/activity_internet_demo1LinearLayout1">
+
+			<androidx.cardview.widget.CardView
+				xmlns:card_view="http://schemas.android.com/apk/res-auto"
+				android:layout_height="500dp"
+				android:layout_width="match_parent"
+				android:layout_margin="15dp"
+				android:layout_gravity="center"
+				card_view:cardCornerRadius="15dp"
+				card_view:cardElevation="25dp"
+				android:layout_weight="1.0"
+				android:id="@+id/activity_internet_demo1CardView1">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+                        android:padding="10dp"
+						android:text=""
+                        android:id="@+id/activity_internet_demo1TextView"
+						android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+				</LinearLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/activity_internet_demo1Button"
+				android:text="Start"/>
+
+		</LinearLayout>
+
+	</androidx.core.widget.NestedScrollView>
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/activity_internet_demo1FloatingActionButton"
+		android:layout_margin="16dp"
+		android:src="@drawable/ic_share_all_outline"
+		android:gravity="bottom|right"
+		app:layout_anchor="@+id/activity_internet_demo1NestedScrollView"
+		app:layout_anchorGravity="bottom|right|end"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
