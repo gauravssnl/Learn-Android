@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:id="@+id/activity_mainCoordinatorlayot"
+	android:fitsSystemWindows="true">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<ListView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/activity_mainListView"
+		android:divider="#FF4081"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		android:dividerHeight="0.5dp"/>
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/activity_mainFloatingActionButton"
+		android:layout_margin="16dp"
+		android:src="@drawable/ic_share_all_outline"
+		android:gravity="bottom|right"
+		app:layout_anchor="@+id/activity_mainListView"
+		app:layout_anchorGravity="bottom|right|end"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

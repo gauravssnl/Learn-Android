@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:id="@+id/activity_widgetCoordinatorlayot"
+	android:fitsSystemWindows="true">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        app:liftOnScroll="true"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/activity_widgetToolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.core.widget.NestedScrollView
+		android:id="@+id/activity_widgetNestedScrollView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+ 
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="10dp">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_height="wrap_content"
+				android:text="Small Button"/>
+
+			<ImageButton
+				android:src="@android:drawable/ic_menu_close_clear_cancel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="Bar Button"/>
+
+			<ImageButton
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+
+			<ToggleButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<Switch
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<SeekBar
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Text"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Small Text"
+				android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"/>
+
+			<View
+				android:background="?android:attr/dividerHorizontal"
+				android:layout_width="1dp"
+				android:layout_height="match_parent"/>
+
+			<ImageView
+				android:src="@android:drawable/ic_delete"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<ProgressBar
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<ProgressBar
+				android:layout_width="wrap_content"
+				style="?android:attr/progressBarStyleLarge"
+				android:layout_height="wrap_content"/>
+
+			<ProgressBar
+				android:layout_width="match_parent"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_height="wrap_content"/>
+
+			<EditText
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_height="wrap_content"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:inputType="textMultiLine"
+				android:layout_height="wrap_content"
+				android:ems="10"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:inputType="textPassword"
+				android:layout_height="wrap_content"
+				android:ems="10"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:inputType="time"
+				android:layout_height="wrap_content"
+				android:ems="10"/>
+
+			<DatePicker
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<TimePicker
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<NumberPicker
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"/>
+
+			<RatingBar
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		</LinearLayout>
+
+	</androidx.core.widget.NestedScrollView>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/activity_widgetFloatingActionButton"
+		android:layout_margin="16dp"
+		android:src="@drawable/ic_share_all_outline"
+		android:gravity="bottom|right"
+		app:layout_anchor="@+id/activity_widgetNestedScrollView"
+		app:layout_anchorGravity="bottom|right|end"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
